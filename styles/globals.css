@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --crema: #f7f3eb;
+  --crema-oscuro: #ede8df;
+  --negro: #111009;
+  --marron: #2d1f14;
+  --acento: #c85a2a;
+  --acento-suave: #e8a882;
+  --texto: #3a2d22;
+  --texto-suave: #7a6a5a;
+  --fuente-display: 'Playfair Display', serif;
+  --fuente-mono: 'DM Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--crema);
+  color: var(--texto);
+  font-family: var(--fuente-mono);
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--fuente-mono);
+}
+
+::selection {
+  background: var(--acento);
+  color: var(--crema);
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--crema); }
+::-webkit-scrollbar-thumb { background: var(--acento-suave); }
